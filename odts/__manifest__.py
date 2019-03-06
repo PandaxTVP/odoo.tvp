@@ -6,28 +6,19 @@
         Creacion del Primer Modulo""",
 
     'description': """
-        Este es el ejemplo de la creacion de un modulo de 0
+        Este es el ejemplo de la creacion de un modulo desde 0
     """,
 
-    'author': "My Company",
-    'website': "www.gtvp.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
-    # for the full list
-    'category': 'Uncategorized',
+    'author': "Pandax",
+    'website': "www.gtvp.odoo.com",
+    'category': 'Modulo Automotriz',
     'version': '0.1',
-
-    # any module necessary for this one to work correctly
     'depends': ['base'],
-
-    # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
-    # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
