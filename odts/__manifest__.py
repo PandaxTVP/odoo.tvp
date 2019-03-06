@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "ODTS",
+    'name': "Mi Primer Modulo",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Creacion del Primer Modulo""",
 
     'description': """
-        Long description of module's purpose
+        Este es el ejemplo de la creacion de un modulo de 0
     """,
 
     'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'website': "www.gtvp.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
