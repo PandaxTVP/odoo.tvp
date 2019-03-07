@@ -1,49 +1,61 @@
 <odoo>
   <data>
-    <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="odts.list">
-      <field name="name">ODTS list</field>
-      <field name="model">odts.odts</field>
+
+    <record model="ir.ui.view" id="tree.view.autos">
+      <field name="name">Vista Principal</field>
+      <field name="model">autos</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="marca"/>
+          <field name="modelo"/>
+          <field name="kilomet"/>
         </tree>
       </field>
     </record>
-    -->
 
-    <!-- actions opening views on models -->
-    <!--
-    <record model="ir.actions.act_window" id="odts.action_window">
-      <field name="name">ODTS window</field>
-      <field name="res_model">odts.odts</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-    -->
-
-    <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="odts.action_server">
-      <field name="name">ODTS server</field>
-      <field name="model_id" ref="model_odts_odts"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
+    <record model="ir.ui.view" id="form_view_autos">
+      <field name="name">Formulario</field>
+      <field name="model">autos</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <div>
+              <field name="picture" widget="image" />
+            </div>
+            <group>
+              <field name="name" />
+              <field name="marca" />
+              <field name="modelo" />
+              <field name="year_fabricacion" />
+              <field name="color" />
+              <field name="kilomet" />
+              <field name="garanty" />
+              <field name="transmision" />
+              <field name="puertas" />
+              <field name="pasajeros" />
+              <field name="litros" />
+              <field name="cilindro" />
+              <field name="combustible" />
+            </group>
+          </sheet>
+        </form>
       </field>
     </record>
-    -->
+
+ 
+
+    <record model="ir.actions.act_window" id="menu_autos">
+      <field name="name">Autos</field>
+      <field name="res_model">autos</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
 
     <!-- Top menu item -->
-    <!--
-    <menuitem name="ODTS" id="odts.menu_root"/>
-    -->
+
+    <menuitem name="Autos" id="autos.menu_root"/>
+
     <!-- menu categories -->
     <!--
     <menuitem name="Menu 1" id="odts.menu_1" parent="odts.menu_root"/>
